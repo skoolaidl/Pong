@@ -1,11 +1,12 @@
 /* 
  * Seth Layton
- * CSCI 423 - Pong
+ * CSCI 437 - Pong
  * Due 9/16/19
  */
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+#include "paddle.h"
 
 int main(int argc, char** argv)
 {
@@ -24,12 +25,12 @@ int main(int argc, char** argv)
         App.close();
     }
 
+    Paddle p1(20,300);
+
     // clear screen and fill with blue
     App.clear(sf::Color::Black);
 
-    sf::RectangleShape p1(sf::Vector2f(10.f, 50.f));
-    p1.setFillColor(sf::Color::White);
-    App.draw(p1);
+    App.draw(p1.getPaddle());
 
     // display
     App.display();
