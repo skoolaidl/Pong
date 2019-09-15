@@ -18,6 +18,7 @@ class  Paddle {
         
     private:
         float xPos, yPos;
+        float speed;
         sf::RectangleShape paddle;   
 };
 
