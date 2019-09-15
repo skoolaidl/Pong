@@ -7,9 +7,9 @@ Paddle::Paddle (float xPos, float yPos) {
     position.x = xPos;
     position.y = yPos;
 
-    speed = .6f;
+    speed = .8f;
     
-    paddle.setSize(sf::Vector2f(5,45));
+    paddle.setSize(sf::Vector2f(15,70));
     paddle.setPosition(position);
     paddle.setFillColor(sf::Color::White);
 }
@@ -22,6 +22,10 @@ void Paddle::moveUp() {
 void Paddle::moveDown() {
     position.y += speed;
     paddle.setPosition(position);
+}
+
+sf::Vector2f Paddle::getSize() {
+    return paddle.getSize();
 }
 
 sf::RectangleShape Paddle::getPaddle() {
