@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/Seth/Desktop/pong/src/ball.cpp" "/Users/Seth/Desktop/pong/Debug/CMakeFiles/pong_core.dir/src/ball.cpp.o"
   "/Users/Seth/Desktop/pong/src/paddle.cpp" "/Users/Seth/Desktop/pong/Debug/CMakeFiles/pong_core.dir/src/paddle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

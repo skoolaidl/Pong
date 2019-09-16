@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/ball.h
+SFML/Graphics.hpp
+-
+SFML/Window.hpp
+-
+
 ../include/paddle.h
 SFML/Graphics.hpp
 -
@@ -17,6 +23,14 @@ SFML/Graphics.hpp
 -
 SFML/Audio.hpp
 -
+stdlib.h
+-
+iostream
+-
+cmath
+-
 paddle.h
 /Users/Seth/Desktop/pong/bin/paddle.h
+ball.h
+/Users/Seth/Desktop/pong/bin/ball.h
 

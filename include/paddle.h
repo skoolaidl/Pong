@@ -8,6 +8,7 @@ using namespace std;
 
 class  Paddle {
     public:
+        Paddle() {};
         Paddle(float xPos, float yPos);
 
         void moveUp();

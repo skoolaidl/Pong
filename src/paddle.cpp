@@ -4,12 +4,15 @@
 using namespace std;
 
 Paddle::Paddle (float xPos, float yPos) {
+    //Set initial paddle position
     position.x = xPos;
     position.y = yPos;
 
-    speed = .8f;
+    //Set paddle speed
+    speed = 1.5f;
     
-    paddle.setSize(sf::Vector2f(15,70));
+    //Set paddle parameters
+    paddle.setSize(sf::Vector2f(10,70));
     paddle.setPosition(position);
     paddle.setFillColor(sf::Color::White);
 }

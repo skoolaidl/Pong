@@ -163,6 +163,33 @@ bin/pong.cpp.s:
 	$(MAKE) -f CMakeFiles/pong.dir/build.make CMakeFiles/pong.dir/bin/pong.cpp.s
 .PHONY : bin/pong.cpp.s
 
+src/ball.o: src/ball.cpp.o
+
+.PHONY : src/ball.o
+
+# target to build an object file
+src/ball.cpp.o:
+	$(MAKE) -f CMakeFiles/pong_core.dir/build.make CMakeFiles/pong_core.dir/src/ball.cpp.o
+.PHONY : src/ball.cpp.o
+
+src/ball.i: src/ball.cpp.i
+
+.PHONY : src/ball.i
+
+# target to preprocess a source file
+src/ball.cpp.i:
+	$(MAKE) -f CMakeFiles/pong_core.dir/build.make CMakeFiles/pong_core.dir/src/ball.cpp.i
+.PHONY : src/ball.cpp.i
+
+src/ball.s: src/ball.cpp.s
+
+.PHONY : src/ball.s
+
+# target to generate assembly for a file
+src/ball.cpp.s:
+	$(MAKE) -f CMakeFiles/pong_core.dir/build.make CMakeFiles/pong_core.dir/src/ball.cpp.s
+.PHONY : src/ball.cpp.s
+
 src/paddle.o: src/paddle.cpp.o
 
 .PHONY : src/paddle.o
@@ -203,6 +230,9 @@ help:
 	@echo "... bin/pong.o"
 	@echo "... bin/pong.i"
 	@echo "... bin/pong.s"
+	@echo "... src/ball.o"
+	@echo "... src/ball.i"
+	@echo "... src/ball.s"
 	@echo "... src/paddle.o"
 	@echo "... src/paddle.i"
 	@echo "... src/paddle.s"
